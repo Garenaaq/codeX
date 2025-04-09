@@ -1,0 +1,39 @@
+.markdown_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.markdown_info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+.textarea {
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #4da6ff;
+  border-radius: 4px;
+}
+
+.error {
+  border-color: red;
+}
+
+.preview {
+  border: 1px solid #4da6ff;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  max-height: 100px;
+  overflow-y: auto;
+
+  p {
+    margin: 0;
+  }
+}

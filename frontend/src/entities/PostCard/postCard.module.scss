@@ -1,0 +1,143 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (hover: none) {
+  .card {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.link_author {
+  cursor: pointer;
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.link_author:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.link_author:active {
+  color: #0056b3;
+}
+
+.image_container {
+  margin-right: 10px;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.title_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.preview_text_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview_text {
+  text-align: justify;
+}
+
+.post_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.edit_delete {
+  > * {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+
+  svg {
+    cursor: pointer;
+    fill: white;
+    transition: fill 0.5s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+
+.user_liked {
+  svg {
+    fill: red;
+    transition: fill 0.5s ease;
+  }
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+@media (hover: none) {
+  .toggleButton {
+    &:hover {
+      color: #007bff;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+

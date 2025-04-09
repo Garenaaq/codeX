@@ -1,0 +1,38 @@
+.container_input_field {
+  width: 100%;
+  text-align: left;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input_field {
+  width: 100%;
+  border: 1px solid cornflowerblue;
+  line-height: 1.5;
+  background-color: white;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-right: 10px;
+
+  &::placeholder {
+    color: #a9a9ac;
+    font-family: sans-serif;
+  }
+}
+
+.eyeIconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  border-color: red;
+}

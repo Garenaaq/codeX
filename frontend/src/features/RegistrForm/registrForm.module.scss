@@ -1,0 +1,31 @@
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+
+    &_btn {
+        margin-top: 10px;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    &_link {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+
+        &:hover {
+        color: #0056b3;
+        text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        &:focus {
+            outline: none
+        }
+    }
+}

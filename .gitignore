@@ -1,0 +1,51 @@
+# Игнорируем папку node_modules в корне и в подкаталогах
+node_modules/
+frontend/node_modules/
+api/node_modules/
+
+
+# Игнорируем каталоги сборки
+dist/
+dist-ssr/
+frontend/dist/
+frontend/.vite/
+api/dist/
+
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# Файлы и директории редакторов
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Игнорируем файл с переменными окружения
+.env
+api/.env
+
+# Игнорируем типы и временные файлы TypeScript
+*.tsbuildinfo
+
+
+# Файлы операционной системы
+Thumbs.db
+Desktop.ini
+
+# Временные файлы
+*.tmp
+*.swp

@@ -1,0 +1,12 @@
+.logo_container {
+  display: inline-block;
+  cursor: pointer;
+
+  svg {
+    transition: transform 0.5s ease;
+  }
+
+  &:hover svg {
+    transform: rotate(360deg);
+  }
+}

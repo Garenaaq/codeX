@@ -1,0 +1,125 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  flex: 1;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 544px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
+
+@media (hover: none) {
+  .card {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.image_container {
+  margin-right: 10px;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+
+  @media (max-width: 544px) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.title_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.preview_text_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview_text {
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.links_project_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link_project {
+  width: auto;
+  display: inline-block;
+}
+
+.project_actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit_delete {
+  > * {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+@media (hover: none) {
+  .toggleButton {
+    &:hover {
+      color: #007bff;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+

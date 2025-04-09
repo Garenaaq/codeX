@@ -1,0 +1,11 @@
+.portfolio_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolio_add_project {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}

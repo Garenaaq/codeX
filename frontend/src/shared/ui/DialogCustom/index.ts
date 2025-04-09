@@ -1,0 +1,1 @@
+export { DialogCustom } from "./DialogCustom";

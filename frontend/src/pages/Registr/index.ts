@@ -1,0 +1,1 @@
+export { Registr } from "./Registr";

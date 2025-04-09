@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+}
+
+.profile_header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+
+  &_data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &_top,
+  &_bottom {
+    background-color: hsl(206deg 100% 73.3% / 32%);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 17px;
+    text-align: justify;
+  }
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_bottom {
+    font-size: 17px;
+    display: inline-block;
+  }
+}
+
+.description_text {
+  white-space: pre-wrap;
+}
